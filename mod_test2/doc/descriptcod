@@ -1,0 +1,35 @@
+linkage des librairies <linux/>
+	<module.h>	/** MODULE_LICENSE && MODULE_DESCRIPTION && MODULE_AUTHOR	*/
+	<cdev.h>	/** cdev_del() && cdev_add() && cdev_alloc()			*/
+	<device.h>	/** class_create() && device_create()  && device_destroy()	*/
+	<fs.h>		/** alloc_chrdev_region() && unregister_chrdev_region()		*/
+
+
+description du module au kernel par macro
+	    MODULE_LICENSE
+	    MODULE_DESCRIPTION
+	    MODULE_AUTHOR
+	    MODULE_SUPPORTED_DEVICE
+
+	    #define		/**	Device name	*/
+	    dev_t	    	/**	Major number	*/
+	    struct cdev	    	/**	Driver object	*/
+	    struct class	/**	Device class	*/
+
+fonction man 9 :
+	 printk			/**	variante de printf					*/
+	 alloc_chrdev_region	/**	enregistrez une gamme de numéros de périphérique char	*/
+	 cdev_alloc		/**	allocation et instantiation de l'espace driver
+	 				dans struct cdev object.				*/
+	 cdev_add		/**	ajout de l'objet driver par l'id major/minor		*/
+	 class_create		/**	creation d'une class device				*/
+	 device_create		/**	creation et enregistrement du device dans /dev/		*/
+	 kobject_put		/**	decrement la reference de compteur pour l'objet		*/
+	 device_destroy		/**	detruit le device decrit par le majeur	  	 	*/
+	 class_destroy		/**	note la classe du device a detruire			*/
+	 cdev_del		/**	detruit l'objet et eventuellement la structure device	*/
+	 unregister_chrdev_region   /**	desaloue et detruit la region decrite par majeur mineur	*/
+
+macro man 9 :
+      module_init	/** enregistre le point d'entrer "init_module"		*/
+      module_exit	/** enregistre le point de sortie "cleanup_module"	*/

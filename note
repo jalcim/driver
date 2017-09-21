@@ -1,0 +1,5 @@
+majeur max = 255
+
+peripherique						/dev/
+liste des peripherique					/proc/devices
+log kernel						/var/log/kernel.log (dmesg)
