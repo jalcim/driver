@@ -1,1 +1,0 @@
-cmd_/home/g179664/dev/mods/mod_kmalloc/source/devname.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/g179664/dev/mods/mod_kmalloc/source/devname.ko /home/g179664/dev/mods/mod_kmalloc/source/devname.o /home/g179664/dev/mods/mod_kmalloc/source/devname.mod.o ;  true
