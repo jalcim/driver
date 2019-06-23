@@ -1,0 +1,1 @@
+cmd_/home/argo/project/driver/mm/frame_vector/frame_vector.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/argo/project/driver/mm/frame_vector/frame_vector.ko /home/argo/project/driver/mm/frame_vector/frame_vector.o /home/argo/project/driver/mm/frame_vector/frame_vector.mod.o ;  true

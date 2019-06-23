@@ -1,0 +1,1 @@
+cmd_/home/argo/project/driver/mm/init/devalloc.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/argo/project/driver/mm/init/devalloc.ko /home/argo/project/driver/mm/init/devalloc.o /home/argo/project/driver/mm/init/devalloc.mod.o ;  true

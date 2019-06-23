@@ -1,0 +1,1 @@
+cmd_/home/argo/project/driver/mm/devalloc.o := ld -m elf_x86_64   -r -o /home/argo/project/driver/mm/devalloc.o /home/argo/project/driver/mm/init/devalloc.o /home/argo/project/driver/mm/frame_vector/frame_vector.o 
