@@ -1,6 +1,0 @@
-gerer tous les pheriph uvc 1.5
-
-objectif driver :
-	connection a l'interfaces uvc 1.5
-	orchestrer les version uvc
-	fournir une interface realsense
